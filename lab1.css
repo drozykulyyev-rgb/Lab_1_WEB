@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    background: white;
+    border-bottom: 2px solid #333;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1 { margin: 0; font-size: 28px; }
+h2 { font-size: 20px; }
+
+main {
+    width: 1000px;
+    max-width: 95%;
+    margin: 20px auto;
+}
+
+.main-table {
+    width: 100%;
+    border-spacing: 15px;
+    table-layout: fixed;
+}
+
+.main-table td {
+    padding: 20px;
+    background: white;
+    border: 1px solid #bbb;
+    vertical-align: top;
+}
+
+#graph {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #ddd;
+}
+
+
+form label { display: block; }
+
+input[type="text"] {
+    width: 100%;
+    margin: 5px 0 0;
+    padding: 10px;
+    border: 1px solid #999;
+    font-size: 16px;
+}
+
+input[type="text"]:focus { border-color: #2878bd; }
+input[aria-invalid="true"] { border-color: #c00; }
+
+.r-values label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.error {
+    height: 20px;
+    color: #c00;
+    font-size: 13px;
+}
+
+button {
+    padding: 9px 15px;
+    background: #2878bd;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover { background: #1d5f98; }
+#clear { margin-bottom: 10px; background: #666; }
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.result-table th, .result-table td {
+    padding: 9px;
+    border: 1px solid #bbb;
+    text-align: center;
+}
+
+.result-table th { background: #ddd; }
+.hit { color: green; }
+.miss { color: #c00; }
+
+@media (max-width: 700px) {
+    .main-table, .main-table tbody, .main-table tr, .main-table td { display: block; width: 100%; }
+    .main-table { border-spacing: 0 10px; }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №1</title>
+    <link rel="stylesheet" href="lab1.css">
+</head>
+<body>
+    <header>
+        <h1>Лабораторная работа №1</h1>
+        <p>Розыкулыев Дидар | Группа P3231 | Вариант 22721</p>
+    </header>
+
+    <main>
+        <table class="main-table">
+            <tr>
+                <td>
+                    <h2>Координатная плоскость</h2>
+                    <canvas id="graph" width="500" height="500"></canvas>
+                </td>
+                <td>
+                    <h2>Введите координаты</h2>
+                    <form id="point-form">
+                        <label for="x">X (от -3 до 5):</label>
+                        <input type="text" id="x" placeholder="Введите X">
+                        <div class="error" id="x-error"></div>
+
+                        <label for="y">Y (от -3 до 3):</label>
+                        <input type="text" id="y" placeholder="Введите Y">
+                        <div class="error" id="y-error"></div>
+
+                        <p>Выберите R:</p>
+                        <div class="r-values">
+                            <label><input type="checkbox" name="r" value="1" checked>1</label>
+                            <label><input type="checkbox" name="r" value="1.5">1.5</label>
+                            <label><input type="checkbox" name="r" value="2">2</label>
+                            <label><input type="checkbox" name="r" value="2.5">2.5</label>
+                            <label><input type="checkbox" name="r" value="3">3</label>
+                        </div>
+                        <div class="error" id="r-error"></div>
+
+                        <button type="submit">Проверить</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Результаты</h2>
+        <button type="button" id="clear">Очистить таблицу</button>
+        <table class="result-table">
+            <thead>
+                <tr><th>X</th><th>Y</th><th>R</th><th>Результат</th><th>Дата и время</th></tr>
+            </thead>
+            <tbody id="results"></tbody>
+        </table>
+    </main>
+
+    <script src="lab1.js"></script>
+</body>
+</html>
